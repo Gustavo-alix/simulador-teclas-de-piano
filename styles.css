@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #14407a;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 1.8px;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.intrusiones{
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.piano {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem auto;
+    padding: 20px;
+     background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.key {
+    width: 80px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.1s;
+    user-select: none;
+    position: relative;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.key-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.key-hint {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.key:active,
+.key.active {
+    background-color: #e0e0e0;
+    transform: scale(0.98);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .piano-container {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .key {
+        width: 60px;
+        height: 150px;
+        padding-bottom: 10px;
+    }
+
+    .key-label {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .key {
+        width: 70px;
+        height: 180px;
+    }
+}

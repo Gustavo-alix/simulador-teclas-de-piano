@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>🎹Juego de Piano</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎹Juego de Piano</h1>
+        <p class="intruciones">Haz clip en las teclas o usa las teclas (A-S-D-F)</p>
+
+
+        <div class="piano">
+            <div class="key" id="tecla-c" data-note="C" data-key="a">
+                <span class="key-label">C</span>
+                <span class="key-hint">(A)</span>
+                <audio src="notas musicales/c-note-sound.mp3" id="sonido-tecla-c"></audio>
+            </div>
+            <div class="key" id="tecla-d" data-note="D" data-key="s">
+                <span class="key-label">D</span>
+                <span class="key-hint">(S)</span>
+                <audio src="notas musicales/fa-note-sound.mp3" id="sonido-tecla-d"></audio>
+            </div>
+            <div class="key" id="tecla-e" data-note="E" data-key="d">
+                <span class="key-label">E</span>
+                <span class="key-hint">(D)</span>
+                <audio src="notas musicales/note-c.mp3" id="sonido-tecla-e"></audio>
+            </div>
+            <div class="key" id="tecla-f" data-note="F" data-key="f">
+                <span class="key-label">F</span>
+                <span class="key-hint">(F)</span>
+                <audio src="notas musicales/note-do.mp3" id="sonido-tecla-f"></audio>
+            </div>
+             <div class="key" id="tecla-k" data-note="k" data-key="k">
+                <span class="key-label">K</span>
+                <span class="key-hint">(K)</span>
+                <audio src="notas musicales/note-f.mp3" id="sonido-tecla-k"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
